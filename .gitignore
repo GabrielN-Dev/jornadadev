@@ -1,0 +1,8 @@
+# Ignorar todos os executáveis compilados
+*.exe
+
+# Ignorar arquivos temporários e de build do Harbour
+*.obj
+*.ppo
+*.c
+*.vscode/

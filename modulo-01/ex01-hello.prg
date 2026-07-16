@@ -1,6 +1,7 @@
 REQUEST HB_CODEPAGE_PT850 //config(acento)
 
 FUNCTION Main()
-    QOut("OlÃ¡, Mundo!")
-    QOut("Bem-vindo(a) ï¿½ Jornada DEV START!")
+    QOut("Ol , Mundo!")
+    QOut("Bem-vindo(a) … Jornada DEV START!")
+
 RETURN NIL

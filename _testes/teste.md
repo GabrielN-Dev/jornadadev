@@ -1,3 +1,4 @@
+```mermaid
 graph TD
     A([Início]) --> B[Leia valor da compra]
     B --> C{Valor > 100?}
@@ -7,3 +8,4 @@ graph TD
     E --> G[Escreva Valor Final]
     F --> G
     G --> H([Fim])
+```

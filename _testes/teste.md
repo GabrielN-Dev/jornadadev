@@ -1,9 +1,9 @@
-```mermaid
 graph TD
-    A([Início]) --> B[Leia numero]
-    B --> C{numero mod 2 = 0?}
-    C -- Sim --> D[Escreva 'É par']
-    C -- Não --> E[Escreva 'É ímpar']
-    D --> F([Fim])
-    E --> F
-```
+    A([Início]) --> B[Leia valor da compra]
+    B --> C{Valor > 100?}
+    C -- Sim --> D[Desconto = Valor × 0.10]
+    D --> E[Valor Final = Valor - Desconto]
+    C -- Não --> F[Valor Final = Valor]
+    E --> G[Escreva Valor Final]
+    F --> G
+    G --> H([Fim])

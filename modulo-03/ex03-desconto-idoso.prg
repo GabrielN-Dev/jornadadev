@@ -6,14 +6,14 @@ FUNCTION Main()
     LOCAL nIdade
     LOCAL nTotal 
     LOCAL nDesconto := 0
-    LOCAL nVD //variavel de desconto
+    LOCAL nVD // variavel de desconto
 
 
     ACCEPT "Digite seu nome: " to cNome
     ACCEPT "Digite sua data de nascimento (DD/MM/AAAA): " to cNascstr
-    ACCEPT "Digite o preáo do produto: " to nPreco
+    ACCEPT "Digite o pre√ßo do produto: " to nPreco
     ACCEPT "Digite o valor de deconto em porcentagem para pessoas acima de 60 anos: " to nVD
-     // Desconto definido pelo usu†rio.
+     // Desconto definido pelo usu√°rio.
 
 
     //calculo da idade: 
@@ -36,7 +36,7 @@ FUNCTION Main()
     nVD := nVD * 100
     QOut("Nome do cliente: " + cNome)
     QOut("idade: " + alltrim(str(nIdade))) 
-    QOut("preáo:  " +  alltrim(str(nPreco, 10,2)) + "R$")
+    QOut("pre√ßo:  " +  alltrim(str(nPreco, 10,2)) + "R$")
     Qout("Desconto aplicado: " + alltrim(str(nVD, 10,2)) + "%")
     Qout("Valor total: " + alltrim(str(nTotal, 10,2)))
 

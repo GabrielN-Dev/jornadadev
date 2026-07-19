@@ -7,20 +7,20 @@ FUNCTION Main()
     LOCAL cCod := "Dev"
 
 
-    // ------------- Teste: -------------------
+    // -------------  Teste: -------------------
 
     hb_cdpSelect("PT850")
     Qout("DADOS(Teste): ")
     Qout("================================")
     Qout("Nome do funcionario: " + cNomeFunc)
-    Qout("Sal†rio do funcion†rio " + ALLTRIM(STR(nSalario)))
+    Qout("Sal√°rio do funcion√°rio " + ALLTRIM(STR(nSalario)))
     IF  lativo
-        Qout("O funcion†rio est† ativo")
+        Qout("O funcion√°rio est√° ativo")
     ELSE
-        Qout("O funcion†rio esta desativado")
+        Qout("O funcion√°rio esta desativado")
     ENDIF
-    Qout("Data de admiss∆o do funcion†rio " + DTOC(dAdmissao))
-    Qout("C¢digo do setor do funcion†rio: " + cCod)
+    Qout("Data de admiss√£o do funcion√°rio " + DTOC(dAdmissao))
+    Qout("C√≥digo do setor do funcion√°rio: " + cCod)
 
 RETURN Nil    
 

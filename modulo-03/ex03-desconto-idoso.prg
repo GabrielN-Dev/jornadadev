@@ -6,7 +6,8 @@ FUNCTION Main()
     LOCAL nIdade
     LOCAL nTotal 
     LOCAL nDesconto := 0
-    LOCAL nVD := 0//variavel de desconto
+    LOCAL nVD //variavel de desconto
+
 
     ACCEPT "Digite seu nome: " to cNome
     ACCEPT "Digite sua data de nascimento (DD/MM/AAAA): " to cNascstr
@@ -16,7 +17,7 @@ FUNCTION Main()
 
 
     //calculo da idade: 
-    cNascstr = alltrim(cNascstr)
+    cNascstr := alltrim(cNascstr)
     dNasc := CToD(cNascstr)
     nIdade := INT((Date() - dNasc) / 365)
 
@@ -28,7 +29,7 @@ FUNCTION Main()
     IF nIdade > 60
         nDesconto := nPreco * nVD
     ELSE
-         nVD = 0.00 
+         nVD := 0.00 
     ENDIF
 
     nTotal := nPreco - nDesconto 

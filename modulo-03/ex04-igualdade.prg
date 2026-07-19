@@ -1,11 +1,11 @@
-REQUEST HB_CODEPAGE_PT850
+REQUEST HB_CODEPAGE_PTISO
 
 FUNCTION Main()
 
    LOCAL cNome
    LOCAL cExI
 
-   hb_cdpSelect( "PT850" )
+  HB_CDPSELECT("PTISO")
 
    QOut( "==================================================" )
    QOut( "      DIFEREN€A ENTRE OS OPERADORES = E ==         " )

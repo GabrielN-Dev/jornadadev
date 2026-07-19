@@ -1,7 +1,8 @@
 /* nota:
-    Define Ç uma constante (n∆o muda)
-    INPUT utilizado para n£meros
-    ACCEPT Ç utilizado para string
+
+    Define √© uma constante (n√£o muda)
+    INPUT utilizado para n√∫meros
+    ACCEPT √© utilizado para string
 
 */
 REQUEST HB_CODEPAGE_PT850 
@@ -14,15 +15,15 @@ FUNCTION Main()
     hb_cdpSelect("PT850")
 
     QOut("=========================================")
-    QOut("           MENU DE F‡RMULAS              ")
+    QOut("           MENU DE F√ìRMULAS              ")
     QOut("=========================================")
-    QOut(" [ a ] µrea do C°rculo")
+    QOut(" [ a ] √Årea do C√≠rculo")
     QOut(" [ h ] Hipotenusa")
-    QOut(" [ i ] ÷ndice de Massa Corporal (IMC)")
+    QOut(" [ i ] √çndice de Massa Corporal (IMC)")
     QOut("-----------------------------------------")
     QOut("")
     
-    ACCEPT " Escolha uma opá∆o e pressione Enter: " TO cFuncao
+    ACCEPT " Escolha uma op√ß√£o e pressione Enter: " TO cFuncao
 
     cFuncao := Lower(cFuncao)
         
@@ -36,9 +37,9 @@ FUNCTION Main()
         CalIMC()
 
     ELSE
-        QOut("Comando Inv†lido! O programa ser† encerrado.")
+        QOut("Comando Inv√°lido! O programa ser√° encerrado.")
         QOut("Pressione Enter para sair...")
-        Inkey(0)   // Essa funá∆o pausa o programa atÇ o usu†rio pressionar qualquer tecla
+        Inkey(0)   // Essa fun√ß√£o pausa o programa at√© o usu√°rio pressionar qualquer tecla
     ENDIF
 
 RETURN NIL
@@ -47,7 +48,7 @@ RETURN NIL
 
 // -------------------------------------------------
 
-//Funá∆o do c†lculo da †rea:
+//Fun√ß√£o do c√°lculo da √°rea:
 
 
 FUNCTION CalA()
@@ -58,7 +59,7 @@ FUNCTION CalA()
     nRaio := Val(nRaio)
 
     nArea := PI * nRaio ^ 2
-    QOut("µrea: " + AllTrim(Str(nArea, 10, 2)))
+    QOut("√Årea: " + AllTrim(Str(nArea, 10, 2)))
 
 RETURN NIL
             
@@ -68,7 +69,7 @@ RETURN NIL
 
 // -------------------------------------------------
 
-// C†lculo da hipotenusa
+// C√°lculo da hipotenusa
 
 FUNCTION CalHipo()
     LOCAL nA
@@ -82,7 +83,7 @@ FUNCTION CalHipo()
     nB := Val(nB)
 
     nHipo := Sqrt(nA ^ 2 + nB ^ 2)
-    QOut("A hipotenusa Ç: " + AllTrim(str(nHipo , 10, 2 )))
+    QOut("A hipotenusa √©: " + AllTrim(str(nHipo , 10, 2 )))
 RETURN NIL
 
 // -------------------------------------------------
@@ -92,7 +93,7 @@ RETURN NIL
 
 // -------------------------------------------------
 
-// C†lculo do °ndice de massa corporal
+// C√°lculo do √≠ndice de massa corporal
 
 
 FUNCTION CalIMC()
@@ -108,9 +109,9 @@ FUNCTION CalIMC()
 
     IF nAltura > 0
         nResultado := nPeso / nAltura ^2
-        Qout("Seu indice corporal Ç: " + alltrim(str(nResultado, 10,2)))
+        Qout("Seu indice corporal √©: " + alltrim(str(nResultado, 10,2)))
     ELSE
-        QOut("Erro: A altura deve ser maior que 0. Operaá∆o cancelada.")
+        QOut("Erro: A altura deve ser maior que 0. Opera√ß√£o cancelada.")
         QOut("Pressione qualquer tecla para sair...")
         Inkey(0)
     ENDIF

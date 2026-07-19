@@ -1,5 +1,6 @@
 REQUEST HB_CODEPAGE_PT850
 
+// HB_ValToStr --> ele irá converter para string o resultado booleano 
 FUNCTION Main()
 
    LOCAL cNome
@@ -31,10 +32,13 @@ FUNCTION Main()
    IF "totovs" = cExI
       QOut()
       QOut( "Parabéns! A comparação usando '=' retornou verdadeiro." )
+      Qout("Retonou com esse simbolo: " + HB_ValToStr( "totovs" = cExI ))
       Igual()
    ELSE
       QOut()
       QOut( "Você digitou algo diferente do início da palavra." )
+      Qout("Retornou falso")
+      Qout("Retonou com esse simbolo: " + HB_ValToStr( "totovs" = cExI ))
       QOut( "Pressione qualquer tecla para sair..." )
       Inkey(0)
    ENDIF

@@ -60,6 +60,7 @@ FUNCTION AnaliseModoLivre()
     LOCAL nA
     
     QOut("Executando o Modo de Coleta Livre...")
+    QOut("Dica: Para sair pressione enter sem digitar um numero")
     DO WHILE .t.
       
         ACCEPT " Digite o número: " TO nA

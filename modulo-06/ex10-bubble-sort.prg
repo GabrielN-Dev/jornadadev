@@ -10,11 +10,10 @@ FUNCTION Main()
     LOCAL nTemp     
 
    hb_cdpSelect("PT850")
+    QOut("Dica: Para sair pressione enter sem digitar um numero")
 
    
-
 DO WHILE .t.
-      
         ACCEPT " Digite o número: " TO nA
     
         IF Empty(nA) 

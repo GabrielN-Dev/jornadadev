@@ -25,13 +25,13 @@ FUNCTION Main()
       QOut("=========================================")
       QOut("          CONTROLE DE ESTOQUE            ")
       QOut("=========================================")
-      QOut("1 ? Cadastrar Produto")
-      QOut("2 ? Listar Estoque Completo")
-      QOut("3 ? Entrada de Estoque")
-      QOut("4 ? Saída de Estoque")      
-      QOut("5 ? Buscar Produto por Código")
-      QOut("6 ? Relatório de Valores")
-      QOut("0 ? Sair")
+      QOut("1 - Cadastrar Produto")
+      QOut("2 - Listar Estoque Completo")
+      QOut("3 - Entrada de Estoque")
+      QOut("4 - Saída de Estoque")      
+      QOut("5 - Buscar Produto por Código")
+      QOut("6 - Relatório de Valores")
+      QOut("0 - Sair")
       QOut("=========================================")
       QOut("")
       
@@ -40,7 +40,6 @@ FUNCTION Main()
 
       DO CASE
          CASE cOpcao == "1"
-            // Passamos a array por parâmetro para a camada de telas!
             Menu_Cadastrar(aEstoqueGeral) 
          CASE cOpcao == "2"
             Listar_Produtos(aEstoqueGeral)

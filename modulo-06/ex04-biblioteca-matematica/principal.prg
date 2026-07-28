@@ -3,29 +3,39 @@ SET PROCEDURE TO matematica.prg // inclui a biblioteca
 
 
 FUNCTION Main()
-
+        LOCAL cOP
         LOCAL nI
+        LOCAL nII
         hb_cdpSelect("PT850")
+        ACCEPT " Digite a operação  (FAT), (PRI), (MMC), (MDC): " TO cOP
+        
+        cOP := Upper(AllTrim(cOP))   
         ACCEPT " Digite o primeiro número: " TO nI
+        nI := Val(nI)
 
-
-        // Código aqui
-
+        IF cOP <> "FAT" .AND. cOP <> "PRI"
+            ACCEPT " Digite o segundo número: " TO nII
+            nII := Val(nII)
+        ENDIF
+        
+         DO CASE
+        CASE cOP == "FAT"
+            FatorialN(nI)
+        CASE cOP == "PRI"
+            if EhPrimo(nI)
+                QOut("É primo")
+            else
+               QOut(" não É primo")
+            ENDIF
+        CASE cOP == "MMC"
+            MMC(nI, nII)
+        CASE cOP == "MDC"
+            MDC(nI, nII)
+    OTHERWISE
+        QOut( "Você selecionou uma opção inexistente!")
+        
+    ENDCASE 
 RETURN NIL
 
-FUNCTION OutraForma()
-     LOCAL nI
-               LOCAL nControle 
-           hb_cdpSelect("PT850")
-             ACCEPT " Digite o primeiro número: " TO nI
 
-    nI := Val(nI)
 
-        FOR nI := nI TO 2  STEP - 1
-        nControle = nControle * (nI - 1)
- // Mostra 10, 8, 6, 4, 2
-NEXT
-
-    QOut(nControle)
-   // Código aqui
-return nil

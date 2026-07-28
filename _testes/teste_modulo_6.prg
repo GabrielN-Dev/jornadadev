@@ -1,11 +1,15 @@
-/*
-Notas:
+/* Notas: 
 
-AEval() pode substituir um FOR EACH em percursos simples de arrays.
+essas funções equivalentes:
 
-Exemplos:
-- Exibir todos os elementos.
-- Somar todos os elementos.
+Eval( aNumeros, {|nX| QOut("O numero é: " + str(nX))} )  <--> FOR EACH nNum IN aNumeros
+                                                                    QOut(nNum)
+                                                              NEXT
+
+AEval( aNumeros, {|nX| nSoma += nX} )        <-->           FOR EACH nNum IN aNumeros
+                                                                nControle := nControle + nNum
+                                                            NEXT
+                                                            QOut("soma:" + str(nControle))                           
 */
 
 REQUEST HB_CODEPAGE_PT850
@@ -81,6 +85,8 @@ FUNCTION AnaliseModoLivre()
 
         ENDIF   
        
+
+       // adiciona no final
     ENDDO 
     ExibirResultados(aNumeros)
 RETURN NIL

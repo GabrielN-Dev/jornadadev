@@ -12,10 +12,12 @@ Inkey(0)   // Essa função pausa o programa até o usuário pressionar qualquer
 REQUEST HB_CODEPAGE_PT850 
 
 FUNCTION Main()
-
-    LOCAL cFuncao
-   
+    LOCAL cFuncao := ""
     hb_cdpSelect("PT850")
+    DO WHILE cFuncao <> "S"
+    InKey(2)         
+    Clear Screen //limpar a tela achei mais eficiente do que o CLS 
+    //CLS
     QOut("=========================================")
     QOut("           MENU CALCULADORA              ")
     QOut("=========================================")
@@ -25,6 +27,8 @@ FUNCTION Main()
     QOut("  [ / ] Divisão")
     QOut("  [ ^ ] Potência")
     QOut("  [ R ] Raiz quadrada")
+    QOut("  [ S ] Sair") 
+
 
     QOut("-----------------------------------------")
     QOut(" Digite a opção desejada: ")
@@ -47,11 +51,21 @@ FUNCTION Main()
         CalPot()
         CASE cFuncao == "R"
         CalRaiz()     
+        CASE cFuncao == "S"
+            // Não faz nada.
+            // O DO WHILE termina porque cFuncao = "S".
+            // Fiz isso com o propósito de não assustar o usuário 
     OTHERWISE
-        QOut("Operação inválida!")
-        QOut("Pressione Enter para sair...")
-        Inkey(0)     
-    ENDCASE
+        ACCEPT "Você selecionou uma opção inexistente! Deseja fechar o programa?(S/N) " TO cFuncao
+        cFuncao :=  Upper(AllTrim(cFuncao))   
+        IF (cFuncao == "S")
+            EXIT
+        ENDIF
+    ENDCASE 
+ENDDO
+
+   
+  
 RETURN NIL
 
 
@@ -71,8 +85,7 @@ FUNCTION CalSoma()
     nB := LerNumero(MSG_SEGUNDO)
     nR := nA + nB
     Qout("O resultado da soma é: " + AllTrim(str(nR,10,2)))
-
-
+    Pausar()  
 RETURN NIL
             
 // -------------------------------------------------
@@ -92,11 +105,10 @@ FUNCTION CalSub()
     nB := LerNumero(MSG_SEGUNDO)
     nR := nA - nB
     Qout("O resultado da subtração é: " + AllTrim(str(nR,10,2)))
+    Pausar()
 RETURN NIL
 
 // -------------------------------------------------
-
-
 
 
 // -------------------------------------------------
@@ -114,6 +126,7 @@ FUNCTION CalMulti()
     nB := LerNumero(MSG_SEGUNDO)
     nR := nA * nB
     Qout("O resultado da multiplição é: " + AllTrim(str(nR,10,2)))
+    Pausar()
 RETURN NIL
 
 
@@ -132,10 +145,11 @@ FUNCTION CalDivi()
     IF nB  <> 0
         nR := nA / nB
         QOut("O resultado da divisão é: "+ AllTrim(str(nR,10,2)))
+        QOut("Pressione Enter para Voltar ao menu...")
+        Inkey(0)   
     ELSE 
         QOut("Então.... é impossível dividir um número por 0")
-        QOut("Pressione Enter para sair...")
-        Inkey(0)     
+        Pausar() 
     ENDIF    
 RETURN NIL
 // -------------------------------------------------
@@ -155,7 +169,7 @@ FUNCTION CalPot()
 
         nR := nA ^ nB
         QOut("O resultado é: "+ AllTrim(str(nR,10,2)))
-
+        Pausar()
 RETURN NIL
 // -------------------------------------------------
 
@@ -176,6 +190,7 @@ FUNCTION CalRaiz()
     ELSE
         nR := Sqrt(nA)
         QOut("O resultado é: "+ AllTrim(str(nR,10,2)))
+        Pausar()
     ENDIF
 
 RETURN NIL
@@ -206,3 +221,8 @@ FUNCTION LerNumero(nVeri)
             nA := Val(nA)
 Return nA
 
+
+FUNCTION Pausar()
+        QOut("Pressione Enter para Voltar ao menu...")
+        Inkey(0) 
+Return nil

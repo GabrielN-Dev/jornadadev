@@ -7,7 +7,7 @@ FUNCTION Main()
 
    hb_cdpSelect("PT850")
   
-   nR := Int( HB_Random( 1, 100 ) ) // Gerar um número aleatório inteiro
+   nR :=  HB_RandomInt( 1, 100 )  // Gerar um número aleatório inteiro
 
    do while nVida > 0  .AND. nRUser <> nR // verifico se o usuário possui vida ou se ele acertou
       ACCEPT "Digite um número de 1 a 100: " TO nRUser

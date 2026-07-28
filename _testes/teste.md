@@ -1,15 +1,12 @@
-```mermaid
-graph TD
-    A([Início]) --> B[/Leia ValorCompra/]
-    B --> C{ValorCompra > 100?}
+# Exercício 1 — Função ou procedimento? (conceitual)
 
-    C -- Sim --> D[Desconto ← ValorCompra × 0,10]
-    D --> E[ValorFinal ← ValorCompra - Desconto]
+**Para cada item abaixo, responda se é uma função (retorna um valor) ou um procedimento (apenas executa uma ação) e justifique em uma frase.**
 
-    C -- Não --> F[ValorFinal ← ValorCompra]
-
-    E --> G[/Escreva ValorFinal/]
-    F --> G
-
-    G --> H([Fim])
-```
+| Item | Resposta | Justificativa |
+|------|----------|---------------|
+| `Str()` | **Função (F)** | Recebe um dado numérico como parâmetro e retorna sua representação correspondente em formato de texto (string). |
+| `QOut()` | **Procedimento (P)** | Executa uma operação de saída de dados no console, alterando a interface sem devolver valor ao fluxo do programa. |
+| `Date()` | **Função (F)** | Consulta o relógio interno do sistema operacional e devolve a data corrente como um tipo de dado estruturado. |
+| `Len()` | **Função (F)** | Avalia a estrutura de uma string ou array e retorna um número inteiro que representa o total de seus elementos. |
+| `Upper()` | **Função (F)** | Processa a cadeia de caracteres informada e retorna uma nova string inteiramente modificada em letras maiúsculas. |
+| `ClearScreen()` | **Procedimento (P)** | Realiza um efeito colateral visual ao resetar o terminal, alterando o estado da tela sem gerar dados de retorno. |

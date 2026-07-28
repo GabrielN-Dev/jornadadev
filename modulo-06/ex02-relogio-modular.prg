@@ -1,8 +1,5 @@
 REQUEST HB_CODEPAGE_PT850
-// OBjetivo: 
-/*ObterHora() ? retorna a hora atual
-FormatarHora(cHora) ? devolve a string formatada HH:MM:SS
-ExibirHora(cHora) ? exibe na tela*/
+
 FUNCTION Main()
     LOCAL cHora
     LOCAL nTecla := 0

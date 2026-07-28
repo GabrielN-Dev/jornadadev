@@ -12,6 +12,5 @@ FUNCTION Main()
         ELSE 
             Qout("Dia não encontrado")
         ENDIF 
-   // Código aqui
 
 RETURN NIL

@@ -17,7 +17,6 @@ FUNCTION Menu_Cadastrar(aEstoqueGeral)
       ACCEPT " Digite a quantidade inicial: " TO nQntd
       ACCEPT " Digite o preço unitário (use PONTO para centavos) R$: " TO nPreco_U
       
-      // Conversões de tipo de dado necessárias
      // cCod     := Val(cCod) //não convertir pois to deixando o padrão de 0999
       nQntd    := Val(nQntd)
 
@@ -103,7 +102,6 @@ FUNCTION Menu_Localizar(aEstoqueGeral)
 
    ACCEPT "Por gentileza digite o cod do produto: " TO cCod
    
-   // O motor lógico faz a busca em silêncio...
    nPosicao := Encontrar_Produto(cCod, aEstoqueGeral)
    
    // A tela decide como vai mostrar o resultado...
@@ -135,7 +133,7 @@ FUNCTION Listar_Produtos(aProdutos)
  LOCAL oControle
         LOCAL nColuna
     LOCAL oDado
-    // Obejtivo do aTamanhos> Matriz automática com o tamanho de caracteres de cada coluna na tela
+    // Obejtivo do aTamanhos > cria uma Matriz automática com o tamanho de caracteres de cada coluna na tela
     LOCAL aTamanhos := {8, 25, 10, 15} 
     LOCAL cTextoPronto
 
@@ -206,7 +204,7 @@ FUNCTION Relatorio(aProdutos)
    NEXT
 
    QOut("-----------------------------------------")
-   // O total geral fica FORA do laço para aparecer apenas uma vez no fim!
+   // O total geral fica FORA do laço para aparecer apenas uma vez no fim
    QOut("TOTAL GERAL EM ESTOQUE: R$" + Transform(nTotalGeral, "@E 999,999.99"))
    QOut("=========================================")
    QOut("Pressione qualquer tecla para voltar...")

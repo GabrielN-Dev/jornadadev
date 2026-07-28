@@ -1,22 +1,3 @@
-/*
-Nessa atividade decidir aplicar o conceito de hash. Eu sei que sair da solção principal  Eu pesquisei por fora que a array mas achei interessante ai nesse exercicio coloquei duas suluções
-
-Hash basicamente é quando um valor ligar ao outro é indetico ao JSON
-
-   LOCAL hAgenda := { => }
-
-   h --> hash
-
-   exemplo: 
-      hAgenda[ "Gabriel" ] := "99999-1111"
-      
-  se eu colocar isso hAgenda ["Gabriel"] ele me devolve o número 
-  então achei interessante isso para da a liberdade para o cliente digitar o produto e salvar
-
-
-*/
-
-
 REQUEST HB_CODEPAGE_PT850
 
 FUNCTION Main()

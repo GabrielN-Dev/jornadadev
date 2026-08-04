@@ -70,7 +70,7 @@ Agora serão adicionados os campos estruturais da tabela: `ZA1_NOME`, `ZA1_RACA`
    * **Uso:** Marque **Usado** e **Browse**.
 
 📸 **Resultado final do preenchimento dos campos:**
-![Campos ZA1_NOME, ZA1_RACA e ZA1_NASC preenchidos no Configurador](imagens/ex3-tela1.png)
+![Campos ZA1_NOME, ZA1_RACA e ZA1_NASC preenchidos no Configurador](evidencias/ex3-tela1.png)
 
 ### 1.4. Criar os Índices da Tabela (SIX) — Obrigatório!
 1. Na mesma janela de edição da tabela `ZA1`, clique na aba **Índices**.
@@ -111,7 +111,7 @@ RETURN NIL
 ```
 
 📸 **Código implementado no TOTVS Developer Studio:**
-![Código STTIP001 pronto no DevStudio](imagens/ex3-tela2.png)
+![Código STTIP001 pronto no DevStudio](evidencias/ex3-tela2.png)
 
 #### 🔍 Entendendo os comandos do código:
 * `#include "protheus.ch"`: Carrega os arquivos de cabeçalho necessários com os recursos e definições padrão do AdvPL.
@@ -146,7 +146,7 @@ RETURN NIL
 8. Teste a rotina clicando em **Incluir**, insira dados fictícios nos campos do Pet e salve clicando no **Visto**.
 
 📸 **Resultado final do cadastro de Pets com dados adicionados:**
-![Dados adicionados com sucesso no cadastro de Pets](imagens/ex3-tela3.png)
+![Dados adicionados com sucesso no cadastro de Pets](evidencias/ex3-tela3.png)
 
 ---
 
@@ -169,4 +169,4 @@ O MPSDU é o utilitário de banco de dados do Protheus que permite auditar as ta
 6. Pronto! A tabela abrirá na tela, permitindo que você visualize os registros inseridos pelo seu programa e valide se a estrutura física de campos reais foi criada com sucesso no banco de dados. 
 
 📸 **Visualização física da tabela ZA1 aberta no MPSDU:**
-![Tabela ZA1 e registros auditados no MPSDU](imagens/ex3-tela4.png)
+![Tabela ZA1 e registros auditados no MPSDU](evidencias/ex3-tela4.png)

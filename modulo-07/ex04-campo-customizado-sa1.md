@@ -65,5 +65,5 @@ Preencha as abas exatamente com as propriedades técnicas abaixo:
 3. Você verá que o campo **Apelido** já estará desenhado em tela, pronto para receber dados e salvar no banco de dados, de forma automática e sem a necessidade de programar nenhuma linha de código AdvPL!
 
 📸 **Campo Apelido integrado com sucesso na tela de Clientes (SA1):**
-![Campo Apelido aparecendo na tela de cadastro de clientes](imagens/ex4-tela1.png)
+![Campo Apelido aparecendo na tela de cadastro de clientes](evidencias/ex4-tela1.png)
 

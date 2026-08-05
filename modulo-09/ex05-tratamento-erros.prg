@@ -4,12 +4,12 @@ exceção de Runtime automática para divisão por zero. Sem o comando BREAK
 manual, o compilador resolve a operação internamente, retornando zero 
 ou valor nulo sem desviar o fluxo.
 
-Nota 2: Observação sobre a sintaxe do enunciado (RECOVER WITH):
-Na especificação oficial do Harbour (conforme documentado em 
-https://harbour.github.io/doc/clc53.html#begin-sequence-cmd), a palavra-chave 
-correta para a captura do objeto de erro é "USING" e não "WITH". 
-O uso de "WITH" gera um erro de sintaxe no compilador. Por este motivo, 
-a linha foi ajustada neste código para "RECOVER USING oErro".
+Nota 2: Relação entre o WITH do material e o USING do código:
+No material do exercício, o professor ensina o uso do "WITH" para injetar o 
+bloco de erro na abertura (ex: BEGIN SEQUENCE WITH bBloco). No entanto, no ponto 
+de captura (RECOVER), a sintaxe nativa da linguagem exige obrigatoriamente a 
+palavra-chave "USING" para repassar o objeto do BREAK para a variável local 
+(RECOVER USING oErro). O uso de "RECOVER WITH" gera erro de compilação
 
 Nota 3: Inicialização do Objeto de Erro (ErrorNew()):
 A variável 'oErro' foi instanciada como um objeto real do sistema utilizando 

@@ -238,21 +238,43 @@ Sem prints por causa da instabilidade do ambiente, mas o roteiro testado foi:
 
 ---
 
-## 📌 Fora do escopo desta entrega
+## 📌 Funcionalidades não implementadas nesta entrega
 
-Por prazo, não deu tempo de implementar:
+Durante o desenvolvimento, algumas funcionalidades previstas inicialmente não puderam ser concluídas dentro do prazo. A principal dificuldade foi o nível de familiaridade ainda limitado com ADVPL e com a estrutura do Protheus 8.
 
-- Tabela `ZZ2` (Ocorrências) e `STTZZ2.PRW`/`STTZZ2FLT`
-- Restante da `STTZZLIB.PRW` (`NomeFornecedor`, `NomeProduto`, `PercNaoConforme`, `CertificadoVencendo`, `GravarLogTCC`)
-- Consultas Padrão (SXB) para SA2/SB1/ZZ1
-- Menu no SIGACOM
-- Classe ADVPL (POO) e bloqueio de exclusão de ZZ1 com ZZ2 vinculada
+Parte considerável do tempo foi destinada à compreensão da ferramenta, à realização dos testes e à tentativa de encontrar materiais e exemplos compatíveis com a versão do ambiente utilizada. Como o material disponível para Protheus 8 é mais limitado e muitos exemplos encontrados fazem referência a versões e estruturas diferentes, algumas implementações exigiram um tempo maior de pesquisa e validação do que o previsto inicialmente.
+
+Por esse motivo, optei por priorizar os requisitos que compõem o **núcleo mínimo da entrega**, garantindo que as funcionalidades principais da tabela `ZZ1`, suas validações, manutenção e gatilho fossem documentadas e implementadas.
+
+As funcionalidades que ficaram como próximos passos são:
+
+- Tabela `ZZ2` (Ocorrências) e as rotinas `STTZZ2.PRW` / `STTZZ2FLT`
+- Demais funções auxiliares da `STTZZLIB.PRW`:
+  - `NomeFornecedor`
+  - `NomeProduto`
+  - `PercNaoConforme`
+  - `CertificadoVencendo`
+  - `GravarLogTCC`
+- Consultas Padrão (`SXB`) para `SA2`, `SB1` e `ZZ1`
+- Inclusão da rotina no menu do `SIGACOM`
+- Implementação de Classe ADVPL (POO)
+- Bloqueio da exclusão de registros da `ZZ1` que possuam ocorrências vinculadas na `ZZ2`
+
+Esses itens não foram descartados como parte do projeto, mas ficam registrados como **evoluções futuras** da solução.
 
 ---
 
-## ✅ Checklist — Núcleo mínimo (rubrica-validacao.md)
+## ✅ Checklist — Núcleo mínimo (`rubrica-validacao.md`)
 
-- [x] Tabela ZZ1 definida (estrutura completa neste README)
-- [x] `STTZZ1.PRW` com `mBrowse` funcional, protegido por `BEGIN SEQUENCE`
-- [x] Validações de fornecedor (SA2) e tolerância (0–100), via SX3 + `STTZZLIB.PRW`
-- [x] Gatilho SX7 preenchendo o nome do fornecedor automaticamente
+Os requisitos priorizados para esta entrega foram concluídos:
+
+- [x] Tabela `ZZ1` definida, com estrutura de campos e índices documentada
+- [x] `STTZZ1.PRW` com `mBrowse` para manutenção da tabela
+- [x] Proteção da abertura da rotina utilizando `BEGIN SEQUENCE`
+- [x] Validação da existência do fornecedor na `SA2`
+- [x] Validação da tolerância no intervalo de 0 a 100%
+- [x] Validações configuradas por meio do `SX3` e implementadas na `STTZZLIB.PRW`
+- [x] Gatilho `SX7` para preenchimento automático do nome do fornecedor
+- [x] Roteiro de testes das principais funcionalidades documentado
+
+A entrega foi, portanto, concentrada nos requisitos essenciais da rubrica, mantendo as demais funcionalidades documentadas como possíveis extensões do projeto.

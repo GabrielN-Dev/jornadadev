@@ -1,0 +1,984 @@
+<ApMenu>
+	<DocumentProperties>
+		<Module>SIGACON</Module>
+		<Version>7.10</Version>
+	</DocumentProperties>
+	<Menu Status="Enable">
+		<Title lang="pt">&Atualizações</Title>
+		<Title lang="es">&Actualizaciones</Title>
+		<Title lang="en">&Updates</Title>
+		<Menu Status="Enable">
+			<Title lang="pt">Cadastros</Title>
+			<Title lang="es">Archivos</Title>
+			<Title lang="en">Files</Title>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Plano de Contas</Title>
+				<Title lang="es">Plan de Cuentas</Title>
+				<Title lang="en">Chart Of Accounts</Title>
+				<Function>CONA020</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Tables>SI7</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Itens Contabeis</Title>
+				<Title lang="es">Itemes Contables</Title>
+				<Title lang="en">Accounting Items</Title>
+				<Function>CONA340</Function>
+				<Type>1</Type>
+				<Tables>SID</Tables>
+				<Tables>SI1</Tables>
+				<Tables>SI7</Tables>
+				<Tables>SI4</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Lancamento Padrao</Title>
+				<Title lang="es">Asiento Estandar</Title>
+				<Title lang="en">Standard Entry</Title>
+				<Function>CONA010</Function>
+				<Type>1</Type>
+				<Tables>SI5</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Centro de Custos</Title>
+				<Title lang="es">Centro de Costos</Title>
+				<Title lang="en">Cost Center</Title>
+				<Function>CONA060</Function>
+				<Type>1</Type>
+				<Tables>SI9</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Historicos</Title>
+				<Title lang="es">Historiales</Title>
+				<Title lang="en">Histories</Title>
+				<Function>CONA030</Function>
+				<Type>1</Type>
+				<Tables>SI8</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Moedas</Title>
+				<Title lang="es">Monedas</Title>
+				<Title lang="en">Currencies</Title>
+				<Function>MATA090</Function>
+				<Type>1</Type>
+				<Tables>SM2</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Criacao de Contas</Title>
+				<Title lang="es">Creacion Cuentas</Title>
+				<Title lang="en">Accounts Creation</Title>
+				<Function>CONA130</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Rateios On Line</Title>
+				<Title lang="es">Prorrateos On Line</Title>
+				<Title lang="en">Online Proration</Title>
+				<Function>CONA040</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Tables>SI9</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Rateios Off Line</Title>
+				<Title lang="es">Prorrateos Off Lin</Title>
+				<Title lang="en">Offline Proration</Title>
+				<Function>CONA240</Function>
+				<Type>1</Type>
+				<Tables>SIB</Tables>
+				<Tables>SI1</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Orcamentos</Title>
+				<Title lang="es">Presupuestos</Title>
+				<Title lang="en">Budgets</Title>
+				<Function>CONA190</Function>
+				<Type>1</Type>
+				<Tables>SIA</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Saldos Reais</Title>
+				<Title lang="es">Saldos Mon.corr.</Title>
+				<Title lang="en">Real Balances</Title>
+				<Function>CONA090</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Saldos Moedas</Title>
+				<Title lang="es">Saldos Monedas</Title>
+				<Title lang="en">Currency Balances</Title>
+				<Function>CONA110</Function>
+				<Type>1</Type>
+				<Tables>SI7</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Fórmulas</Title>
+				<Title lang="es">Formulas</Title>
+				<Title lang="en">Formulas</Title>
+				<Function>CFGX019</Function>
+				<Type>1</Type>
+				<Tables>SM2</Tables>
+				<Tables>SM4</Tables>
+				<Tables>SU0</Tables>
+				<Tables>SU5</Tables>
+				<Tables>SU7</Tables>
+				<Tables>SUS</Tables>
+				<Tables>SUV</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+		</Menu>
+		<Menu Status="Enable">
+			<Title lang="pt">Movimentos</Title>
+			<Title lang="es">Movimientos</Title>
+			<Title lang="en">Movements</Title>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Lancam Contabeis</Title>
+				<Title lang="es">Asientos Contables</Title>
+				<Title lang="en">Accounting Entry</Title>
+				<Function>CONA050</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Tables>SI2</Tables>
+				<Tables>SI3</Tables>
+				<Tables>SI6</Tables>
+				<Tables>SI7</Tables>
+				<Tables>SI8</Tables>
+				<Tables>SI9</Tables>
+				<Tables>SIA</Tables>
+				<Tables>SI4</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Pre-lancamentos</Title>
+				<Title lang="es">Asientos Previos</Title>
+				<Title lang="en">Pre-entries</Title>
+				<Function>CONA051</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Tables>SIC</Tables>
+				<Tables>SI3</Tables>
+				<Tables>SI6</Tables>
+				<Tables>SI7</Tables>
+				<Tables>SI8</Tables>
+				<Tables>SI9</Tables>
+				<Tables>SIA</Tables>
+				<Tables>SI4</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+		</Menu>
+	</Menu>
+	<Menu Status="Enable">
+		<Title lang="pt">&Consultas</Title>
+		<Title lang="es">&Consultas</Title>
+		<Title lang="en">&Queries</Title>
+		<Menu Status="Enable">
+			<Title lang="pt">Cadastros</Title>
+			<Title lang="es">Archivos</Title>
+			<Title lang="en">Files</Title>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Genericos</Title>
+				<Title lang="es">Genericos</Title>
+				<Title lang="en">Generic</Title>
+				<Function>LERDA</Function>
+				<Type>1</Type>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Razão</Title>
+				<Title lang="es">Libro Mayor</Title>
+				<Title lang="en">Ledger</Title>
+				<Function>CONC010</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Tables>SI2</Tables>
+				<Tables>SI7</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+		</Menu>
+	</Menu>
+	<Menu Status="Enable">
+		<Title lang="pt">&Relatorios</Title>
+		<Title lang="es">&Informes</Title>
+		<Title lang="en">&Reports</Title>
+		<Menu Status="Enable">
+			<Title lang="pt">Cadastros</Title>
+			<Title lang="es">Archivos</Title>
+			<Title lang="en">Files</Title>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Plano de Contas</Title>
+				<Title lang="es">Plan de Cuentas</Title>
+				<Title lang="en">Chart Of Accounts</Title>
+				<Function>CONR010</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Centro de Custo</Title>
+				<Title lang="es">Centro de Costos</Title>
+				<Title lang="en">Cost Center</Title>
+				<Function>CONR230</Function>
+				<Type>1</Type>
+				<Tables>SI3</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Relacao Historicos</Title>
+				<Title lang="es">Informe Historial</Title>
+				<Title lang="en">List Of History</Title>
+				<Function>CONR020</Function>
+				<Type>1</Type>
+				<Tables>SI8</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Itens Contabeis</Title>
+				<Title lang="es">Itemes Contables</Title>
+				<Title lang="en">Accounting Items</Title>
+				<Function>CONR400</Function>
+				<Type>1</Type>
+				<Tables>SID</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+		</Menu>
+		<Menu Status="Enable">
+			<Title lang="pt">Operacionais</Title>
+			<Title lang="es">Operacionales</Title>
+			<Title lang="en">Operational</Title>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Rel Lancamentos</Title>
+				<Title lang="es">Informe  Asientos</Title>
+				<Title lang="en">Entry List</Title>
+				<Function>CONR030</Function>
+				<Type>1</Type>
+				<Tables>SI2</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Lancamentos P/Lote</Title>
+				<Title lang="es">Asientos Por Lote</Title>
+				<Title lang="en">Entry By Lot</Title>
+				<Function>CONR120</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Tables>SI2</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Lançamentos Dia</Title>
+				<Title lang="es">Asientos Dia</Title>
+				<Title lang="en">Daily Entries</Title>
+				<Function>CONR250</Function>
+				<Type>1</Type>
+				<Tables>SI2</Tables>
+				<Tables>SI6</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Ficha Lancamentos</Title>
+				<Title lang="es">Ficha Asientos</Title>
+				<Title lang="en">Entry File Card</Title>
+				<Function>CONR330</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Tables>SI2</Tables>
+				<Tables>SI3</Tables>
+				<Tables>SID</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Relacao C Prova</Title>
+				<Title lang="es">Informe  C-prueba</Title>
+				<Title lang="en">Test C List</Title>
+				<Function>CONR150</Function>
+				<Type>1</Type>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Lotes C/ Diferenca</Title>
+				<Title lang="es">Lotes Con Diferenc</Title>
+				<Title lang="en">Lot W/ Difference</Title>
+				<Function>CONR420</Function>
+				<Type>1</Type>
+				<Tables>SI2</Tables>
+				<Tables>SIC</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+		</Menu>
+		<Menu Status="Enable">
+			<Title lang="pt">Gerenciais</Title>
+			<Title lang="es">De Gestion</Title>
+			<Title lang="en">Managerial</Title>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Balancete Reais</Title>
+				<Title lang="es">Balance Mon. Corr.</Title>
+				<Title lang="en">Trial Balance</Title>
+				<Function>CONR040</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Balancete Suspens</Title>
+				<Title lang="es">Balance Suspendido</Title>
+				<Title lang="en">Suspen.trial Bal.</Title>
+				<Function>CONR260</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Tables>SI2</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Balancete Trimest</Title>
+				<Title lang="es">Balance Trimestral</Title>
+				<Title lang="en">Quart. Trial Bal.</Title>
+				<Function>CONR350</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Tables>SI2</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Razao</Title>
+				<Title lang="es">Libro Mayor</Title>
+				<Title lang="en">Ledger</Title>
+				<Function>CONR060</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Tables>SI2</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Razao Moedas</Title>
+				<Title lang="es">Lib. Mayor Monedas</Title>
+				<Title lang="en">Currency Ledger</Title>
+				<Function>CONR070</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Tables>SI2</Tables>
+				<Tables>SI7</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Razao C Custo</Title>
+				<Title lang="es">Lib. Mayor C. Cost</Title>
+				<Title lang="en">Cost C. Ledger</Title>
+				<Function>CONR440</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Tables>SI3</Tables>
+				<Tables>SI2</Tables>
+				<Tables>SI7</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Diario Geral</Title>
+				<Title lang="es">Diario General</Title>
+				<Title lang="en">General Journal</Title>
+				<Function>CONR080</Function>
+				<Type>1</Type>
+				<Tables>SI2</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Diario Geral Ccext</Title>
+				<Title lang="es">D.general Cc Ext</Title>
+				<Title lang="en">Ccext Gen.journal</Title>
+				<Function>CONR430</Function>
+				<Type>1</Type>
+				<Tables>SI2</Tables>
+				<Tables>SI3</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Balanco Geral</Title>
+				<Title lang="es">Balance General</Title>
+				<Title lang="en">General Balance</Title>
+				<Function>CONR090</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Balancete Estrang</Title>
+				<Title lang="es">Balance Extranjero</Title>
+				<Title lang="en">Foreign T. Balance</Title>
+				<Function>CONR050</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Tables>SI7</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Balancete Moeda</Title>
+				<Title lang="es">Balance Monedas</Title>
+				<Title lang="en">T. Balance Curren.</Title>
+				<Function>CONR220</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Tables>SI7</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Saldos Anuais</Title>
+				<Title lang="es">Saldos Anuales</Title>
+				<Title lang="en">Yearly Balances</Title>
+				<Function>CONR100</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Tables>SI7</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Movim Mes a Mes</Title>
+				<Title lang="es">Movim Mes Por Mes</Title>
+				<Title lang="en">Monthly Movement</Title>
+				<Function>CONR110</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Tables>SI7</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Mov Mes Mes Cc Ext</Title>
+				<Title lang="es">Mov Mes Mes Cc Ext</Title>
+				<Title lang="en">Mtly.movem. Cc Ext</Title>
+				<Function>CONR280</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Tables>SI3</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Mapa de Resultados</Title>
+				<Title lang="es">Mapa de Resultados</Title>
+				<Title lang="en">Map Of Results</Title>
+				<Function>CONR190</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Desp Cc Contabil</Title>
+				<Title lang="es">Gast Ccost Contab.</Title>
+				<Title lang="en">Acc. Cc Expenses</Title>
+				<Function>CONR200</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Tables>SI7</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Lanc Ccusto Contb.</Title>
+				<Title lang="es">Asien Ccost.contb.</Title>
+				<Title lang="en">Acc. Cc Entry</Title>
+				<Function>CONR180</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Tables>SI2</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Lanc Ccusto Extra</Title>
+				<Title lang="es">Asien Ccosto Extra</Title>
+				<Title lang="en">Offset Cc Entry</Title>
+				<Function>CONR140</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Tables>SI2</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Desp Ccusto Extra</Title>
+				<Title lang="es">Gas. Ccosto Extra</Title>
+				<Title lang="en">Offs. Cc Expens.</Title>
+				<Function>CONR410</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Tables>SI2</Tables>
+				<Tables>SI3</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Balancete Cc Extra</Title>
+				<Title lang="es">Balance Cc Extra</Title>
+				<Title lang="en">Offs. Cc Tr. Bal.</Title>
+				<Function>CONR380</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Tables>SI3</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Demonst.variacao</Title>
+				<Title lang="es">Demuest. Variacion</Title>
+				<Title lang="en">Variation Statem.</Title>
+				<Function>CONR170</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Tables>SI2</Tables>
+				<Tables>SI7</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Comparativo Orcam.</Title>
+				<Title lang="es">Comparativo Pres.</Title>
+				<Title lang="en">Budget Comparative</Title>
+				<Function>CONR390</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Tables>SIA</Tables>
+				<Tables>SI7</Tables>
+				<Tables>SID</Tables>
+				<Tables>SI3</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Balancete X Item</Title>
+				<Title lang="es">Balance Vs Item</Title>
+				<Title lang="en">Trial Bal. X Item</Title>
+				<Function>CONR300</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Tables>SI2</Tables>
+				<Tables>SI7</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Bal. Diario X Item</Title>
+				<Title lang="es">Bal.diario Vs Item</Title>
+				<Title lang="en">Dail.tr. Bal. X It</Title>
+				<Function>CONR340</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Tables>SI2</Tables>
+				<Tables>SI3</Tables>
+				<Tables>SID</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Diario X Item</Title>
+				<Title lang="es">Diario Vs Item</Title>
+				<Title lang="en">Daily X Item</Title>
+				<Function>CONR310</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Tables>SIA</Tables>
+				<Tables>SI7</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Balanc C.c. X Item</Title>
+				<Title lang="es">Balance Cc Vs Item</Title>
+				<Title lang="en">Cc Tr. Bal. X Item</Title>
+				<Function>CONR320</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Tables>SI2</Tables>
+				<Tables>SI3</Tables>
+				<Tables>SID</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Movim. Mensal Rxd</Title>
+				<Title lang="es">Movim.mens. I Vs G</Title>
+				<Title lang="en">Rxe Mth. Mov.</Title>
+				<Function>CONR360</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Tables>SI2</Tables>
+				<Tables>SI4</Tables>
+				<Tables>SI7</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Razao Em 2 Moedas</Title>
+				<Title lang="es">Libro May En 2 Mon</Title>
+				<Title lang="en">Ledger 2 Currenc.</Title>
+				<Function>CONR370</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Tables>SI2</Tables>
+				<Tables>SI4</Tables>
+				<Tables>SI7</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+		</Menu>
+	</Menu>
+	<Menu Status="Enable">
+		<Title lang="pt">&Miscelanea</Title>
+		<Title lang="es">&Miscelanea</Title>
+		<Title lang="en">&Miscellaneous</Title>
+		<Menu Status="Enable">
+			<Title lang="pt">Atualizacoes</Title>
+			<Title lang="es">Actualizaciones</Title>
+			<Title lang="en">Updates</Title>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Atual Sinteticas</Title>
+				<Title lang="es">Actual. Sinteticas</Title>
+				<Title lang="en">Update Summarized</Title>
+				<Function>CONA070</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Tables>SI7</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Saldos de Abertura</Title>
+				<Title lang="es">Saldos de Apertura</Title>
+				<Title lang="en">Opening Balances</Title>
+				<Function>CONA120</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Tables>SI7</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Reprocessamento</Title>
+				<Title lang="es">Reprocesamiento</Title>
+				<Title lang="en">Reprocessing</Title>
+				<Function>CONA080</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Tables>SI2</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Efetivacao</Title>
+				<Title lang="es">Concrecion</Title>
+				<Title lang="en">Accomplishment</Title>
+				<Function>CONA350</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Tables>SI2</Tables>
+				<Tables>SIC</Tables>
+				<Tables>SI4</Tables>
+				<Tables>SID</Tables>
+				<Tables>SI3</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Atualizacao Moedas</Title>
+				<Title lang="es">Actualiza Monedas</Title>
+				<Title lang="en">Currency Updating</Title>
+				<Function>CONA180</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Tables>SI2</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Conversão Saldos</Title>
+				<Title lang="es">Convers. Saldos</Title>
+				<Title lang="en">Balance Conversion</Title>
+				<Function>CONA140</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Tables>SI7</Tables>
+				<Tables>SM2</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Variacao Monetaria</Title>
+				<Title lang="es">Variac. Monetaria</Title>
+				<Title lang="en">Indexation</Title>
+				<Function>CONA170</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Tables>SI2</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Var Monet Cc Extra</Title>
+				<Title lang="es">Var Monet Cc Extra</Title>
+				<Title lang="en">Offs. Cc Index.</Title>
+				<Function>CONA320</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Tables>SI2</Tables>
+				<Tables>SI3</Tables>
+				<Tables>SI7</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Consolidação</Title>
+				<Title lang="es">Consolidacion</Title>
+				<Title lang="en">Consolidation</Title>
+				<Function>CONA210</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Tables>SI2</Tables>
+				<Tables>SI7</Tables>
+				<Tables>SI3</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Rateios Off Line</Title>
+				<Title lang="es">Prorrateos Off Lin</Title>
+				<Title lang="en">Offline Proration</Title>
+				<Function>CONA250</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Tables>SI2</Tables>
+				<Tables>SIB</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Ajuste Orcamentos</Title>
+				<Title lang="es">Ajustar Presupuest</Title>
+				<Title lang="en">Budget Adjustment</Title>
+				<Function>CONA360</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Tables>SI3</Tables>
+				<Tables>SI4</Tables>
+				<Tables>SI7</Tables>
+				<Tables>SIA</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Contabilizacao Txt</Title>
+				<Title lang="es">Contabil. Txt</Title>
+				<Title lang="en">Txt Recording</Title>
+				<Function>CONA260</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Tables>SI2</Tables>
+				<Tables>SI5</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Contabil. Cprova</Title>
+				<Title lang="es">Contabil. C.prueba</Title>
+				<Title lang="en">Cprova Accounting</Title>
+				<Function>CONA270</Function>
+				<Type>1</Type>
+				<Tables>SI2</Tables>
+				<Tables>SI1</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Integração Folha</Title>
+				<Title lang="es">Intg.plan. Haberes</Title>
+				<Title lang="en">Payroll Integrat.</Title>
+				<Function>CONA220</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Tables>SI2</Tables>
+				<Tables>SI3</Tables>
+				<Tables>SI6</Tables>
+				<Tables>SI7</Tables>
+				<Tables>SI8</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Inter Company</Title>
+				<Title lang="es">Inter Company</Title>
+				<Title lang="en">Intercompany</Title>
+				<Function>CONA300</Function>
+				<Type>1</Type>
+				<Tables>SIC</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Gera Cód Invertido</Title>
+				<Title lang="es">Crea Cod Invertido</Title>
+				<Title lang="en">Genr. Invert.code</Title>
+				<Function>CONA330</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+		</Menu>
+		<Menu Status="Enable">
+			<Title lang="pt">Fechamento</Title>
+			<Title lang="es">Cierre</Title>
+			<Title lang="en">Closing</Title>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Lucros e Perdas</Title>
+				<Title lang="es">Gananc. Y Perdidas</Title>
+				<Title lang="en">Profit And Losses</Title>
+				<Function>CONA160</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Tables>SI2</Tables>
+				<Tables>SI3</Tables>
+				<Tables>SI7</Tables>
+				<Tables>SI6</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Transporta Sald Lp</Title>
+				<Title lang="es">Transp. Saldo Lp</Title>
+				<Title lang="en">Trans. Pl Bal.</Title>
+				<Function>CONA310</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Tables>SI2</Tables>
+				<Tables>SI3</Tables>
+				<Tables>SI7</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Encerram de Saldos</Title>
+				<Title lang="es">Cierre de Saldos</Title>
+				<Title lang="en">Balance Closing</Title>
+				<Function>CONA150</Function>
+				<Type>1</Type>
+				<Tables>SI1</Tables>
+				<Tables>SI7</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Planilha Excel</Title>
+				<Title lang="es">Planilla Excel</Title>
+				<Title lang="en">Excel Worksheet</Title>
+				<Function>APEXCEL</Function>
+				<Type>1</Type>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Dicionário Crystal</Title>
+				<Title lang="es">Diccionar. Crystal</Title>
+				<Title lang="en">Crystal Dictionary</Title>
+				<Function>CALLDICT</Function>
+				<Type>1</Type>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">.limpeza Mensal</Title>
+				<Title lang="es">.limpieza Mensual</Title>
+				<Title lang="en">.monthly Clearing</Title>
+				<Function>CONA280</Function>
+				<Type>1</Type>
+				<Tables>SI2</Tables>
+				<Tables>SI6</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+		</Menu>
+		<Menu Status="Enable">
+			<Title lang="pt">Workflow</Title>
+			<Title lang="es">Workflow</Title>
+			<Title lang="en">Workflow</Title>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Rastreabilidade</Title>
+				<Title lang="es">Trazabilidad</Title>
+				<Title lang="en">Trackability</Title>
+				<Function>WFC001</Function>
+				<Type>1</Type>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Processos Usuarios</Title>
+				<Title lang="es">Procesos Usuarios</Title>
+				<Title lang="en">Users Processes</Title>
+				<Function>WFC002</Function>
+				<Type>1</Type>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+			<MenuItem Status="Enable">
+				<Title lang="pt">Messenger</Title>
+				<Title lang="es">Messenger</Title>
+				<Title lang="en">Messenger</Title>
+				<Function>WFATASKRMT</Function>
+				<Type>1</Type>
+				<Tables>WF6</Tables>
+				<Access>xxxxxxxxxx</Access>
+				<Module>03</Module>
+			</MenuItem>
+		</Menu>
+	</Menu>
+</ApMenu>
